@@ -1,0 +1,19 @@
+docker-osx
+===========
+
+```
+$ ./machine.sh create
+
+$ ./machine.sh update
+
+$ eval "$(docker-machine env osx-m)"
+
+$ docker-compose up
+
+# Rebuild Dockerfile
+
+$ docker-compose build
+
+$ docker-compose up
+
+```
