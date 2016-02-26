@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 case "$1" in
   create)
@@ -15,6 +15,8 @@ case "$1" in
       echo "osx-a not exist"
     else
       docker-machine stop osx-a
+      VBoxManage modifyvm "osx-a" --cpus 4
+      VBoxManage modifyvm "osx-a" --cpuexecutioncap 80
       VBoxManage modifyvm "osx-a" --memory 2048
       VBoxManage modifyvm "osx-a" --natpf1 "nginx,tcp,,8080,,80"
       VBoxManage modifyvm "osx-a" --natpf1 "node,tcp,,3000,,3000"
