@@ -1,6 +1,12 @@
-# OSX
+# Docker on OSX
 
 Docker example for mac osx
+
+# Install dockettoolbox
+
+```
+$ brew cask install dockertoolbox
+```
 
 # Docker
 
