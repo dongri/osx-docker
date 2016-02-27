@@ -2,7 +2,7 @@
 
 Docker example for mac osx
 
-# Install dockettoolbox
+# Install dockertoolbox
 
 ```
 $ brew cask install dockertoolbox
