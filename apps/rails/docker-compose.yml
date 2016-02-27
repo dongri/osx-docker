@@ -1,0 +1,10 @@
+rails:
+  build: .
+  dockerfile: Dockerfile
+  volumes:
+    - ./hoge:/var/app/hoge
+  ports:
+    - "3001:3000"
+  log_driver: "json-file"
+  log_opt:
+    max-size: "500k"

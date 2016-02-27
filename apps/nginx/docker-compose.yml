@@ -1,0 +1,7 @@
+nginx:
+  build: nginx
+  dockerfile: Dockerfile
+  volumes:
+    - ./html:/var/app/nginx/html
+  ports:
+    - "80:80"
